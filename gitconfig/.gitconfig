@@ -11,7 +11,14 @@
 	last = log -1 HEAD
 	unstage = reset HEAD --
 [push]
-	default = simple
+	default = upstrem
 	followTags = true
+[pull]
+	rebase = true
 [color]
-	ui = true
+    ui = true
+    status = always
+[diff]
+    tool = default-difftool
+[difftool "default-difftool"]
+    cmd = code --wait --diff $LOCAL $REMOTE
