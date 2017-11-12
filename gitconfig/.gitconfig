@@ -11,7 +11,7 @@
 	last = log -1 HEAD
 	unstage = reset HEAD --
 [push]
-	default = upstrem
+	default = upstream
 	followTags = true
 [pull]
 	rebase = true
